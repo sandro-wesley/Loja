@@ -1,0 +1,804 @@
+html{
+    background-color: #303030;
+}
+header{
+    
+    height: 7.6rem;
+    width: 100%;
+    background-color: #ff0000;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-menu{
+    background-color: #ff0000;
+    grid-template-columns: 1rem 2rem 2rem 2rem 2rem;
+    grid-template-rows: 50% 50%;
+
+}
+.header{
+    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: 1;
+    align-items: center;
+   
+  
+    
+    
+}
+.logo{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.proc{
+
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 140px;
+    
+    width: 100%;
+    padding: 3px 15px;
+    
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ir{
+margin-top: 5px;
+    margin-left: 125px;
+   grid-column: 4;
+
+}
+
+.car{
+    grid-row: 1;
+    grid-column: 5;
+    margin: 0 auto;
+    padding: 5px 30px;
+    font-size: 20px;
+
+    color: aliceblue;
+    background-color: #303030;
+    border-radius: 20px;
+    cursor: pointer;
+
+    border: solid #303030;
+}
+
+#cart{
+    margin-bottom: -5px;
+}
+
+.entrar{
+    cursor: pointer;
+    grid-row: 1;
+    grid-column: 6;
+   
+    width: 11rem;
+    margin: 0 auto;
+    padding: 5px 30px;
+
+    color: aliceblue;
+    background-color: #303030;
+    
+    border: solid #303030;
+    
+   font-size: 20px;
+   border-radius: 20px;
+}
+.user{
+    margin-bottom: -7px;
+}
+
+.menu{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    
+    color: aliceblue;
+    font-size: 20px;
+    list-style: none;
+    
+    cursor: pointer;
+   
+    
+    height: 25px;
+    width: 97%;
+
+    margin-left: 5px;
+    padding: 5px 9px;
+    display: grid;
+    background: #303030;
+    border: solid #303030;
+    border-radius: 20px;
+    
+}
+
+
+.elec{
+    grid-column: 1;
+    
+}
+.cel{
+    grid-column: 2;
+}
+.tv{
+    grid-column: 3;
+}
+.eletr{
+    grid-column: 4;
+}
+.livro{
+    grid-column: 5;
+}
+.bri{
+    grid-column: 6;
+}
+/*
+.banner{
+    background: rgb(255, 136, 136);
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 40%;
+    position: fixed;
+  
+}
+*/
+
+main{
+    
+    background-color: #303030;
+    
+}
+
+#prod{
+    color: #000;
+}
+#desc{
+    font-size: 24px;
+    
+}
+.container{
+    display: grid;
+    
+    text-align: center;
+     
+    margin-left: 5%;
+    grid-template-columns: 25% ;
+    grid-template-rows: 34% ;
+    justify-items: stretch;
+    column-gap: normal;
+    row-gap: 15px;
+
+    margin-top: 115px;
+    margin-bottom: 25px;
+}
+
+
+.pr1{
+    grid-column: 1;
+    grid-row: 1;
+    
+    margin-top: 20px;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+    
+}
+
+
+#produto{
+    margin: 10px auto;
+    width: 250px;
+
+    
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.pr2{
+    grid-row: 1;
+    grid-column: 2;
+
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+    
+    
+}
+
+
+.pr3{ 
+    grid-row: 1;
+    grid-column: 3;
+
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+   
+    height: 25rem;
+    width: 18rem;
+    
+}
+
+.pr4{
+    grid-row: 1;
+    grid-column: 4;
+
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+  
+    height: 25rem;
+    width: 18rem;
+    
+}
+
+.pr5{
+    grid-column: 1;
+    grid-row: 2;
+
+    background-color: #fff;
+    border-radius: 15px;
+ 
+    height: 25rem;
+    width: 18rem;
+}
+
+.pr6{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+
+.pr7{
+    grid-column: 3;
+    grid-row: 2;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+
+.pr8{
+    grid-column: 4;
+    grid-row: 2;
+    background-color: #fff;
+
+    border-radius: 15px;
+   
+    height: 25rem;
+    width: 18rem;
+}
+.pr9{
+
+    grid-row: 3;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+.pr10{
+
+    grid-row: 3;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+
+.pr11{
+
+    grid-row: 3;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+
+.pr12{
+
+    grid-row: 3;
+    background-color: #fff;
+
+    border-radius: 15px;
+    
+    height: 25rem;
+    width: 18rem;
+}
+
+footer{
+    width: 100%;
+    background-color: #1a1818;
+    border-top: 20px solid #1a1818;
+    border-bottom: 30px solid #1a1818;
+    
+}
+a{
+    color: aliceblue;
+}
+.f-conteiner{
+    display: flex;
+
+    flex-direction: row;
+    
+    justify-content:space-evenly;
+
+    align-items: stretch;
+
+    font-size: 20px;
+    color: aliceblue;
+
+    line-height: 35px;
+}
+
+.inst{
+    
+    order: 1;
+}
+
+.ajuda{
+    order: 2;
+}
+
+.redes{
+    order: 3;
+}
+
+#fac{
+    width: 50px;
+}
+#ins{
+    width: 50px;
+}
+#twi{
+    width: 50px;
+}
+#linke{
+    width: 50px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:1200px){
+  
+
+   .container{
+   column-gap: normal;
+   margin-top: 115px;
+    align-items: stretch;
+
+    
+   }
+
+
+    #produto{
+        margin: 10px auto;
+        width: 190px;
+    
+        
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    .pr1{
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+
+    .pr2{
+        grid-column: 2;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+
+    .pr3{
+        grid-column: 3;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+
+    .pr4{
+        grid-column: 4;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+
+    .pr5{
+        grid-column: 1;
+        grid-row: 2;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+    .pr6{
+        grid-column: 2;
+        grid-row: 2;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+    .pr7{
+        grid-column: 3;
+        grid-row: 2;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+    .pr8{
+        grid-column: 4;
+        grid-row: 2;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 22rem;
+        width: 14rem;
+    
+    }
+
+    .pr9{
+        grid-column: 1;
+        grid-row: 3;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+       height: 22rem;
+        width: 14rem;
+        margin-bottom: 0px;
+    }
+
+    .pr10{
+        grid-column: 2;
+        grid-row: 3;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 21rem;
+        width: 14rem;
+    
+    }
+
+    .pr11{
+        grid-column: 3;
+        grid-row: 3;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 21rem;
+        width: 14rem;
+    
+    }
+    .pr12{
+        grid-column: 4;
+        grid-row: 3;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 21rem;
+        width: 14rem;
+    
+    }
+}
+
+@media screen and (max-width:1248px){
+    .container{
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .car{
+      
+    }
+    .entrar{
+     
+    }
+    
+}
+@media screen and (max-width:990px) {
+.car{
+    width: 110px;
+    font-size: 17px;
+    padding: 1px 1px;
+}  
+    .entrar{
+        width: 100px;
+        margin: 0;
+        padding: 1px 1px;
+    }
+
+}
+@media screen and (max-width:926px) {
+    
+    .container{
+        display: grid;
+        
+        text-align: center;
+         
+        margin-left: 5%;
+        grid-template-columns: 33.3% ;
+        grid-template-rows: 25% ;
+        row-gap: 5px;
+        margin-bottom: 90px;
+    }
+    #produto{
+        margin: 18px auto;
+        width: 190px;
+        
+        
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    .pr1{
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 15rem;
+
+        margin-left: 10%;
+        margin-bottom: 0;
+    }
+
+    .pr2{
+        grid-column: 2;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+
+        margin-left: 15%;
+        margin-bottom: 0;
+    }
+
+    .pr3{
+        grid-column: 3;
+        grid-row: 1;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-bottom: 0;
+    }
+
+    .pr4{
+        grid-column: 1;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 10%;
+    }
+
+    .pr5{
+        grid-column: 2;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 15%;
+    }
+    .pr6{
+        grid-column: 3;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+    
+    }
+    .pr7{
+        grid-column: 1;
+        grid-row: 3;
+        
+    
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 10%;
+    }
+    .pr8{
+        grid-column: 2;
+        grid-row: 3;
+        
+      
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 15%;
+    }
+
+    .pr9{
+        grid-column: 3;
+        grid-row: 3;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+       height: 23rem;
+        width: 14rem;
+        margin-bottom: 25px;
+    }
+
+    .pr10{
+        grid-column: 1;
+        grid-row: 4;
+        
+       
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 10%;
+    }
+
+    .pr11{
+        grid-column: 2;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+        margin-left: 15%;
+    }
+    .pr12{
+        grid-column: 3;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        height: 23rem;
+        width: 14rem;
+    
+    }
+}
