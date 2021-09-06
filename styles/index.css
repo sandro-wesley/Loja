@@ -3,12 +3,15 @@ html{
 }
 header{
     
-    height: 7.6rem;
+    height: 6.8rem;
     width: 100%;
     background-color: #ff0000;
     position: fixed;
     left: 0;
     top: 0;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 a{
@@ -21,7 +24,7 @@ a{
     grid-template-rows: 50% 50%;
 
 }
-.header{
+.parte1{
     
     display: grid;
     grid-column-start: 1;
@@ -29,8 +32,6 @@ a{
     grid-row: 1;
     align-items: center;
    
-  
-    
     
 }
 .logo{
@@ -104,6 +105,9 @@ margin-top: 5px;
 .user{
     margin-bottom: -7px;
 }
+#btn-mobile{
+    display: none;
+}
 
 .menu{
     grid-row: 2;
@@ -114,15 +118,17 @@ margin-top: 5px;
     font-size: 20px;
     list-style: none;
     
-    cursor: pointer;
-   
+    
+   padding: 2px 2px;
     
     height: 25px;
-    width: 97%;
+    width: 99%;
 
     margin-left: 5px;
-    padding: 5px 9px;
-    display: grid;
+
+    display: flex;
+    
+    gap: 6rem;
     background: #303030;
     border: solid #303030;
     border-radius: 20px;
@@ -131,23 +137,25 @@ margin-top: 5px;
 
 
 .elec{
-    grid-column: 1;
-    
+    cursor: pointer;
 }
 .cel{
-    grid-column: 2;
+    cursor: pointer;
 }
 .tv{
-    grid-column: 3;
+    cursor: pointer;
 }
 .eletr{
-    grid-column: 4;
+    
+    cursor: pointer;
 }
 .livro{
-    grid-column: 5;
+    
+    cursor: pointer;
 }
 .bri{
-    grid-column: 6;
+    
+    cursor: pointer;
 }
 /*
 .banner{
@@ -365,6 +373,7 @@ a{
     font-size: 20px;
     color: aliceblue;
 
+    gap: 5%;
     line-height: 35px;
 }
 
@@ -396,14 +405,15 @@ a{
 }
 
 
-@media screen and (max-width:1200px){
+@media (max-width:1230px){
   
-
+.menu{
+    gap: 3rem;
+}
    .container{
    column-gap: normal;
    margin-top: 115px;
     align-items: stretch;
-
     
    }
 
@@ -536,7 +546,7 @@ a{
     
         border-radius: 15px;
         
-       height: 22rem;
+       height: 21rem;
         width: 14rem;
         margin-bottom: 0px;
     }
@@ -582,24 +592,16 @@ a{
     
     }
 }
-
-@media screen and (max-width:1248px){
-    .container{
-        margin-left: 1%;
-    }
+@media (max-width:1030px) {
+    .menu{gap: 2rem;}
 }
 
-@media screen and (max-width:1040px) {
-    .car{
-      
-    }
-    .entrar{
-     
-    }
-    
-}
 @media screen and (max-width:990px) {
-.car{
+.menu{
+    gap: 2rem;
+}
+
+    .car{
     width: 110px;
     font-size: 17px;
     padding: 1px 1px;
@@ -611,8 +613,13 @@ a{
     }
 
 }
-@media screen and (max-width:926px) {
-    
+
+
+@media (max-width:970px) {
+    .menu{
+        gap: 0.6rem;
+        margin-left: 0;
+    }
     .container{
         display: grid;
         
@@ -623,6 +630,13 @@ a{
         grid-template-rows: 25% ;
         row-gap: 5px;
         margin-bottom: 90px;
+    }
+    
+    .proc{
+        margin-left: 115px;
+    }
+    .ir{
+        margin-left: 110px;
     }
     #produto{
         margin: 18px auto;
@@ -644,9 +658,9 @@ a{
         border-radius: 15px;
         
         height: 23rem;
-        width: 15rem;
+        width: 14rem;
 
-        margin-left: 10%;
+        
         margin-bottom: 0;
     }
 
@@ -662,7 +676,7 @@ a{
         height: 23rem;
         width: 14rem;
 
-        margin-left: 15%;
+      
         margin-bottom: 0;
     }
 
@@ -691,7 +705,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 10%;
+       
     }
 
     .pr5{
@@ -705,7 +719,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 15%;
+        
     }
     .pr6{
         grid-column: 3;
@@ -731,7 +745,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 10%;
+   
     }
     .pr8{
         grid-column: 2;
@@ -744,7 +758,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 15%;
+       
     }
 
     .pr9{
@@ -772,7 +786,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 10%;
+        
     }
 
     .pr11{
@@ -786,7 +800,7 @@ a{
         
         height: 23rem;
         width: 14rem;
-        margin-left: 15%;
+        
     }
     .pr12{
         grid-column: 3;
@@ -801,4 +815,815 @@ a{
         width: 14rem;
     
     }
+}
+@media (max-width:980px){
+    .menu{
+        gap: 1.5rem
+    }
+}
+
+@media (max-width:910px){
+header{
+    height: 50px;
+}
+    .logo{
+     width: 40px;
+     margin-left: 70px;
+ }
+ .proc{
+     width: 80%;
+height: 25px;
+ }
+.ir{
+    margin: 0;
+    margin-top: 5px;
+    height: 29px;
+}
+    #btn-mobile{
+        display: block;
+        margin-top: -20px;
+        
+    }
+    .menu{
+        margin-left: 0px;
+    border-radius: 0px; 
+
+        display: block;
+       
+        position: absolute;
+        width: 100%;
+        height: 0px ;
+        top: 60px;
+       left: 0;
+        z-index: 1000;
+        
+        transition:0.6s;
+        visibility: hidden;
+        overflow-y: hidden;
+            
+    }
+    #nav.active .menu{
+        visibility: visible;
+        overflow-y: auto;
+        height: 45vh;
+    }
+    .menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    #btn-mobile{
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background:none;
+        cursor: pointer;
+
+        gap:0.5rem;
+    }
+
+    #burger{
+        width: 20px;
+        border-top: 2px solid  hsl(192, 100%, 50%);;
+        
+    }
+
+    #burger::after, #burger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: hsl(192, 100%, 50%);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #burger{
+        border-top-color: transparent;
+    }
+    #nav.active #burger::before{
+    transform: rotate(135deg);
+    }
+    #nav.active #burger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+        }
+
+    .container{
+        margin-top: 56px;
+        margin-bottom: 25px;
+}
+}
+@media screen and (max-width: 770px) {
+    .car{
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        
+        
+    }
+    #cart{
+        margin-left: 0;
+        width: 28px;
+    }
+    .entrar{
+        width: 50px;
+        height: 40px;
+        border-radius: 110%;
+    }
+.user{
+    margin-left: 3px;
+    width: 28px;
+
+}
+}
+@media (max-width: 730px) {
+    .container{
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+    #produto{
+        margin: 18px auto;
+        width: 125px;
+        
+        
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+
+    .pr1{
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        
+        margin-bottom: 0;
+    }
+
+    .pr2{
+        grid-column: 2;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+      
+        margin-bottom: 0;
+    }
+
+    .pr3{
+        grid-column: 3;
+        grid-row: 1;
+        
+        
+        background-color: #fff;
+      
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        margin-bottom: 0;
+    }
+
+    .pr4{
+        grid-column: 1;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+       
+    }
+
+    .pr5{
+        grid-column: 2;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        
+    }
+    .pr6{
+        grid-column: 3;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+    
+    }
+    .pr7{
+        grid-column: 1;
+        grid-row: 3;
+        
+    
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+   
+    }
+    .pr8{
+        grid-column: 2;
+        grid-row: 3;
+        
+      
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+       
+    }
+
+    .pr9{
+        grid-column: 3;
+        grid-row: 3;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 15px;
+        
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        
+    }
+
+    .pr10{
+        grid-column: 1;
+        grid-row: 4;
+        
+       
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        
+    }
+
+    .pr11{
+        grid-column: 2;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+        
+    }
+    .pr12{
+        grid-column: 3;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 20rem;
+        width: 10rem;
+
+    
+    }
+}
+
+@media screen and (max-width: 630px){
+  .logo{
+      margin-left: 50px;
+  }
+    .proc{
+        margin-left: 30%;
+        width: 70%;
+    }
+    .car{
+        width: 40px;
+    }
+    .entrar{
+        width: 40px;
+        margin-right: 0px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    #produto{
+        width: 100px;
+    }
+    
+    .pr1{
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+        
+        margin-bottom: 0;
+    }
+
+    .pr2{
+        grid-column: 2;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+      
+        margin-bottom: 0;
+    }
+
+    .pr3{
+        grid-column: 3;
+        grid-row: 1;
+        
+        
+        background-color: #fff;
+      
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+        margin-bottom: 0;
+    }
+
+    .pr4{
+        grid-column: 1;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+       
+    }
+
+    .pr5{
+        grid-column: 2;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        height: 18.5rem;
+        width: 9rem;
+
+        
+    }
+    .pr6{
+        grid-column: 3;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+    
+    }
+    .pr7{
+        grid-column: 1;
+        grid-row: 3;
+        
+    
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+   
+    }
+    .pr8{
+        grid-column: 2;
+        grid-row: 3;
+        
+      
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+       
+    }
+
+    .pr9{
+        grid-column: 3;
+        grid-row: 3;
+        
+        
+        background-color: #fff;
+        
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+        
+    }
+
+    .pr10{
+        grid-column: 1;
+        grid-row: 4;
+        
+       
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+        
+    }
+
+    .pr11{
+        grid-column: 2;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+        
+    }
+    .pr12{
+        grid-column: 3;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18.5rem;
+        width: 9rem;
+
+    
+    }
+    .f-conteiner{
+        margin-left: 8px;
+    }
+}
+
+@media (max-width:450px) {
+    #desc{
+        font-size: 20px;
+        
+    }
+  .pr1{
+        grid-column: 1;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+        
+        margin-bottom: 0;
+    }
+
+    .pr2{
+        grid-column: 2;
+        grid-row: 1;
+        
+        margin-top: 20px;
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+      
+        margin-bottom: 0;
+    }
+
+    .pr3{
+        grid-column: 3;
+        grid-row: 1;
+        
+        
+        background-color: #fff;
+      
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+        margin-bottom: 0;
+    }
+
+    .pr4{
+        grid-column: 1;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+       
+    }
+
+    .pr5{
+        grid-column: 2;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        height: 18rem;
+        width: 8rem;
+
+        
+    }
+    .pr6{
+        grid-column: 3;
+        grid-row: 2;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+    
+    }
+    .pr7{
+        grid-column: 1;
+        grid-row: 3;
+        
+    
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+   
+    }
+    .pr8{
+        grid-column: 2;
+        grid-row: 3;
+        
+      
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+    }
+
+    .pr9{
+        grid-column: 3;
+        grid-row: 3;
+        
+        
+        background-color: #fff;
+        
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+        
+    }
+
+    .pr10{
+        grid-column: 1;
+        grid-row: 4;
+        
+       
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+        
+    }
+
+    .pr11{
+        grid-column: 2;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+
+        
+    }
+    .pr12{
+        grid-column: 3;
+        grid-row: 4;
+        
+        
+        background-color: #fff;
+    
+        border-radius: 10px;
+        
+        height: 18rem;
+        width: 8rem;
+    }
+    .f-conteiner{
+        font-size: 18px;
+    }
+}
+@media (max-width: 395px) {
+   .logo{
+       width: 30px;
+   }
+   .proc{
+       height: 20px;
+       width: 66%;
+   }
+   .ir{
+       height: 22px;
+   }
+    .car{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    #cart{
+        width: 20px;
+    }
+    .entrar{
+     margin-right: -5px;
+     border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    .user{
+        width: 20px;
+    }
+#produto{
+    width: 6rem;
+    height: 7rem;
+}
+    .pr1{
+        width: 7rem;
+    }
+    .pr2{
+        width: 7rem;
+
+    }
+    .pr3{
+        width: 7rem;
+
+    }
+    .pr4{ 
+     width: 7rem;
+    }
+    .pr5{
+        width: 7rem;
+    }
+    .pr6{
+        width: 7rem;
+    }
+    .pr7{
+        width: 7rem;
+    }
+    .pr8{
+        width: 7rem;
+    }
+    .pr9{
+        width: 7rem;
+    }
+    .pr10{
+        width: 7rem;
+    }
+    .pr11{
+        width: 7rem;
+    }
+    .pr12{
+        width: 7rem;
+    }
+    .f-conteiner{
+        gap: 5%;
+    }
+}
+/*
+@media (max-width:340px) {
+   .container{
+       margin-right: 0;
+       margin-left: 1px;
+       gap: 5px;
+   }
+    #produto{
+        width: 80px;
+    }
+    #desc{
+       font-size: 19px;
+    }
+    .pr1{
+        width: 6rem;
+    }
+    .pr2{
+        width: 6.5rem;
+    }
+    .pr3{
+        width: 6rem;
+    }
+    .pr4{
+        width: 6rem;
+    }
+    .pr5{
+        width: 6rem;
+    }
+    .pr6{}
+    .pr7{}
+    .pr8{}
+    .pr9{}
+    .pr10{}
+    .pr11{}
+    .pr12{}
 }

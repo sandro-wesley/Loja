@@ -15,50 +15,62 @@
     <header>
         <div class="container-menu">
            
-            <div class="header">
+            <div class="parte1">
 
                 <img src="img/logo.png" alt="logo" class="logo">
-                <input type="text" placeholder="procurar" class="proc">
+                <input placeholder= "procurar" name="proc" class= "proc" /> 
+              
                 <input type="image" src="img/search.png" alt="ir" class="ir">
 
                 <button type="button" class="car">
-                    carrinho
+                    
                     <img src="img/cart.png" alt="carrinho" id="cart">
                     <a href=""></a>
                 </button>
 
                 <button type="button" class="entrar">
-                    entrar
+                    
                     <img src="/img/user.png" class="user">
                 </button>
 </div>
-<nav class="menu">
-               
-    <a>
+<nav id="nav">
+    <button id="btn-mobile">
+
+        <span id="burger"></span>
+    </button> 
+    
+    <ul class="menu">         
+    <a href="">
         <li class="elec">
             ELETRONICOS</li>
     </a>
 
+    <a href="">
     <li class="cel">
         CELULARES
     </li>
-
+</a>
+<a href="">
     <li class="tv">
         TELEVISÃO
     </li>
-
+</a>
+<a href="">
     <li class="eletr">
         ELETRODOMESTICOS
     </li>
-
+</a>
+<a href="">
     <li class="livro">
         LIVROS
     </li>
-
+</a>
+<a href="">
     <li class="bri">
         BRINQUEDOS
     </li>
-
+    </a>
+</ul>
 
 </nav>
         </div>
@@ -273,4 +285,20 @@
     </footer>
 </body>
 
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+
+    if (event.type =='touchstart') event.preventDefault(); {
+        
+    }
+
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
 </html>
