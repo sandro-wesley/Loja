@@ -1591,12 +1591,31 @@ height: 25px;
         gap: 5%;
     }
 }
-/*
+
 @media (max-width:340px) {
-   .container{
+    .logo{
+        margin-left: 30px;
+    }
+    .ir{
+        margin-left: -40px;
+    }
+      .proc{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          margin-left: 5px;
+        width: 75%;
+      }
+      .entrar{
+          margin-right: 2px;
+          margin-left: 5px;
+      }
+      #btn-mobile{
+          margin-left: -10px;
+      }
+    .container{
        margin-right: 0;
        margin-left: 1px;
-       gap: 5px;
+       gap: 1px;
    }
     #produto{
         width: 80px;
@@ -1608,7 +1627,7 @@ height: 25px;
         width: 6rem;
     }
     .pr2{
-        width: 6.5rem;
+        width: 6rem;
     }
     .pr3{
         width: 6rem;
@@ -1619,11 +1638,13 @@ height: 25px;
     .pr5{
         width: 6rem;
     }
-    .pr6{}
-    .pr7{}
-    .pr8{}
-    .pr9{}
-    .pr10{}
-    .pr11{}
-    .pr12{}
+    .pr6{
+        width: 6rem;
+    }
+    .pr7{width: 6rem;}
+    .pr8{width: 6rem;}
+    .pr9{width: 6rem;}
+    .pr10{width: 6rem;}
+    .pr11{width: 6rem;}
+    .pr12{width: 6rem;}
 }
